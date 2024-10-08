@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* CABEÇALHO */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #6d6d6d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #ffd94d;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #ffd94d;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+header .contato button:hover {
+    box-shadow: 0px 0px 8px #ffd94d;
+}
+
+.logo button {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    background-color: #ffd94d;
+    border: 0;
+    border-radius: 15px;
+    margin: 0 0 20px;
+}
+
+/* topo */
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.sobre h1 {
+    font-size: 42px;
+    line-height: 40px;
+    color: #ffd94d;
+    text-align: center;
+}
+
+.sobre p {
+    color: #ffd94d;
+    margin: 40px 0;
+}
+
+.sobre button {
+    width: 50px;
+    height: 50px;
+    font-size: 23px;
+    background-color: #ffd94d;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 0 20px;
+}
+
+.sobre button:hover {
+    box-shadow: 0px 0px 6px #ffd94d;
+}
+
+.sobre img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* hab */
+section.habilidades {
+    padding: 40px 4%;
+}
+
+.flex {
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.interface h2 {
+    text-align: center;
+    font-size: 42px;
+    color: #ffd94d;
+}
+
+.habilidades-box {
+    color: #ffd94d;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.habilidades-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px #ffffff5b;
+}
+
+.habilidades-box i {
+    font-size: 60px;
+    color: #ffd94d;
+}
+
+.habilidades-box h3 {
+    color: #ffd94d;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* proj */
+section.projetos {
+    padding: 80px 4%;
+}
+
+section.projetos .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-proj {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 6s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-proj:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #201f1f81;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffd94d;
+    opacity: 0;
+    transition: .5s;
+}
+
+.projetos .overlay:hover {
+    opacity: 1;
+}
+
+/* rod */
+footer {
+    padding: 60px 4%;
+    background-color: #000;
+}
+
+footer h2 {
+    text-align: center;
+    color: #ffd94d;
+    margin-bottom: 20px;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line2 {
+    padding: 10px 0 10px;
+    border-top: 2px solid #ffd94d;
+}
+
+footer .line2 p i {
+    color: #ffd94d;
+    font-size: 20px;
+}
+
+footer .line2 p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+footer input, footer textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffd94d;
+    border-radius: px;
+    background-color: #222;
+    color: #ffd94d;
+    resize: none; 
+}
+
+footer textarea {
+    height: 150px; 
+}
+
+footer button {
+    font-size: 25px;
+    background-color: #ffd94d;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    margin-top: 20px; 
+}
+
+
+footer button:hover {
+    background-color: #ffe066;
+}
+
+footer .mapa {
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer .mapa iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 0;
+}
+
+@media screen and (max-width: 1020px) {
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    .interface h2 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .menu, .contato {
+        display: none;
+    }
+
+    section.sobre {
+        padding: 20px 8%;
+    }
+
+    .sobre h1 {
+        font-size: 30px;
+    }
+
+    .sobre img {
+        width: 100%;
+    }
+
+    section.sobre .flex {
+        gap: 40px;
+    }
+
+    .sobre button {
+        text-align: center;
+    }
+
+    section.habilidades {
+        padding: 40px 8%;
+    }
+
+    section.projetos {
+        padding: 80px 8%;
+    }
+
+    .img-proj {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.projetos .flex {
+        gap: 60px;
+    }
+
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line2 {
+        text-align: center;
+    }
+}
